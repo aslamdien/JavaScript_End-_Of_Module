@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/login.css" />
+    <script src="https://kit.fontawesome.com/4d777e0ebe.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <nav>
+      <img src="./images/lifechoices.png" alt="image.png">
+      <h1>Life Choices Point Of Sale</h1>
+    </nav>
+    <div class="login_page">
+      <h1><i class="fas fa-portrait"></i></h1>
+      <h2>Login</h2>
+      <div class="login">
+        <form action="https://stormy-forest-82724.herokuapp.com/auth" method="POST">
+          <input 
+            class="login_info"
+            type="text"
+            name="username"
+            placeholder="username"
+            required
+          />
+          <input
+            class="login_info"
+            type="password"
+            name="password"
+            placeholder="password"
+            required
+          />
+          <button class="button" type="submit" value="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    <div>
+      <h3>Not Registered? <a href="register.html">Sign Up</a></h3>
+    </div>
+  </body>
+</html>

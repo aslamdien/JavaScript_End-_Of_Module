@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(121, 233, 10, 0.651);
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  top: 0.5px;
+  color: white;
+  width: 210vh;
+  height: 11vh;
+}
+
+h1{
+  font-size: 50px;
+}
+
+.pic {
+  height: 50px;
+  width: 50px;
+  color: black;
+}
+
+.login_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  padding: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  background: rgb(65, 235, 102);
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4%;
+  height: 10%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.button {
+  padding: 5px;
+  font-size: 16px;
+  width: 40vh;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #6ccb40, #80f14c);
+}
+
+.button:hover {
+  background: #78e147;
+  box-shadow: inset 20px 20px 60px #66bf3c, inset -20px -20px 60px #8aff52;
+}
+
+a {
+  color: black;
+  list-style-type: none;
+  text-decoration: none;
+}
