@@ -21,6 +21,7 @@
             class="login_info"
             type="text"
             name="username"
+            id="username"
             placeholder="username"
             required
           />
@@ -28,15 +29,17 @@
             class="login_info"
             type="password"
             name="password"
+            id="password"
             placeholder="password"
             required
           />
-          <button class="button" type="submit" value="submit">Login</button>
+          <button onclick="event.preventDefault(), login()" class="button">Login</button>
         </form>
       </div>
     </div>
     <div>
       <h3>Not Registered? <a href="register.html">Sign Up</a></h3>
     </div>
+    <script src="./scripts/login.js"></script>
   </body>
 </html>

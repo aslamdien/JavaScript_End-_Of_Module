@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-items{
+max-width: 200px;
+}
+
+img{
+    height: 19vh;
+    width: 19vh;
+}
+
+.info{
+    margin-bottom: 1px;
+}

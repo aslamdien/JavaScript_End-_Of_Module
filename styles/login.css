@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +11,10 @@ body {
   justify-content: center;
   align-items: center;
   background: rgba(121, 233, 10, 0.651);
+  font-family: "Merienda One";
 }
 
-nav{
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +25,7 @@ nav{
   height: 11vh;
 }
 
-h1{
+h1 {
   font-size: 50px;
 }
 
@@ -75,8 +77,4 @@ h1{
   box-shadow: inset 20px 20px 60px #66bf3c, inset -20px -20px 60px #8aff52;
 }
 
-a {
-  color: black;
-  list-style-type: none;
-  text-decoration: none;
-}
+

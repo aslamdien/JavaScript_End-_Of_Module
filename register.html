@@ -1,28 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/register.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/register.css" />
+    <script
+      src="https://kit.fontawesome.com/4d777e0ebe.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Register User</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <img src="./images/lifechoices.png" alt="image">
-        <h1> Life Choices Point Of Sale</h1>
+      <img src="./images/lifechoices.png" alt="image" />
+      <h1>Life Choices Point Of Sale</h1>
     </nav>
     <div class="form">
-       <div class="register">
-        <form action="https://stormy-forest-82724.herokuapp.com/register/" method="POST">
-            <input class="info" type="text" name="name" placeholder=" Name" required>
-            <input class="info" type="text" name="surname" placeholder=" Surname" required>
-            <input class="info" type="text" name="id_namber" placeholder=" ID No." required>
-            <input class="info" type="text" name="email" placeholder=" email@gmail.com" required>
-            <input class="info" type="text" name="username" placeholder=" username" required>
-            <input class="info" type="password" name="password" placeholder=" password" required>
-            <button type="submit" value="submit">Sign Up</button>
-        </form> 
-       </div> 
+      <h2>
+        <span><i class="fas fa-pen"></i></span>Register
+      </h2>
+      <div class="register">
+        <form
+          action="https://stormy-forest-82724.herokuapp.com/register/"
+          method="POST"
+        >
+          <input
+            class="info"
+            type="text"
+            name="name"
+            placeholder=" Name"
+            required
+          />
+          <input
+            class="info"
+            type="text"
+            name="surname"
+            placeholder=" Surname"
+            required
+          />
+          <input
+            class="info"
+            type="text"
+            name="id_number"
+            placeholder=" ID No."
+            required
+          />
+          <input
+            class="info"
+            type="text"
+            name="email"
+            placeholder=" email@gmail.com"
+            required
+          />
+          <input
+            class="info"
+            type="text"
+            name="username"
+            placeholder=" username"
+            required
+          />
+          <input
+            class="info"
+            type="password"
+            name="password"
+            placeholder=" password"
+            required
+          />
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
     </div>
-</body>
+  </body>
 </html>
