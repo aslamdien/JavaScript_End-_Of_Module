@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: chartreuse;
+  background-color: rgb(110, 196, 24);
   padding: 100px;
 }
 
@@ -27,6 +27,17 @@ nav {
 
 h1 {
   font-size: 50px;
+}
+
+.showpass {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+p {
+  color: white;
 }
 
 h2 {

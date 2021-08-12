@@ -16,13 +16,16 @@ function showProductList(url) {
       product.forEach((item) => {
         console.log(item);
         view.innerHTML += `<div class="container">
-        <img class="info" src="${item.product_image}" alt="image"/>
+        <img class="info image" src="${item.product_image}" alt="image"/>
         <h2 class="info">${item.product_name}</h2>
         <p class="info">${item.description}</p>
-        <p class="info">R${item.price}</p>
+        <p class="info"><strong>R${item.price}</strong></p>
+        <button><i class="fas fa-cart-plus"></i> ADD TO CART</button>
         </div>`;
       });
     });
 }
 
 showProductList(base_URL);
+
+

@@ -21,8 +21,16 @@ nav {
   background-color: black;
   top: 0.5px;
   color: white;
-  width: 210vh;
+  width: 194.5vh;
   height: 11vh;
+}
+
+a{
+  font-family: sans-serif;
+}
+
+.forget{
+  margin-bottom: 5px;
 }
 
 h1 {

@@ -27,48 +27,59 @@
           <input
             class="info"
             type="text"
+            id="name"
             name="name"
-            placeholder=" Name"
+            placeholder="Name"
             required
           />
           <input
             class="info"
             type="text"
+            id="surname"
             name="surname"
-            placeholder=" Surname"
+            placeholder="Surname"
             required
           />
           <input
             class="info"
             type="text"
+            id="id_number"
             name="id_number"
-            placeholder=" ID No."
+            placeholder="ID No."
             required
           />
           <input
             class="info"
             type="text"
+            id="email"
             name="email"
-            placeholder=" email@gmail.com"
+            placeholder="email@gmail.com"
             required
           />
           <input
             class="info"
             type="text"
+            id="username"
             name="username"
-            placeholder=" username"
+            placeholder="Username"
             required
           />
           <input
-            class="info"
-            type="password"
-            name="password"
-            placeholder=" password"
-            required
-          />
+              name="Password"
+              id="password"
+              class="info"
+              type="password"
+              placeholder="Password"
+              required
+            />
+          <div class="showpass">
+            <p>Show Password!</p>
+            <input class="tick" type="checkbox" onclick="show_password()"/>
+          </div>
           <button type="submit">Sign Up</button>
         </form>
       </div>
     </div>
+    <script src="./scripts/register.js"></script>
   </body>
 </html>
