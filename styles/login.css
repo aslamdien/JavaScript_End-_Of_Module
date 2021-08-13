@@ -21,7 +21,7 @@ nav {
   background-color: black;
   top: 0.5px;
   color: white;
-  width: 194.5vh;
+  width: 100vw;
   height: 11vh;
 }
 
@@ -78,6 +78,7 @@ h1 {
   width: 40vh;
   border-radius: 20px;
   background: linear-gradient(145deg, #6ccb40, #80f14c);
+  display: block;
 }
 
 .button:hover {

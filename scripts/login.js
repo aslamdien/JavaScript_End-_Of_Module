@@ -1,3 +1,5 @@
+const myStorage = window.localStorage
+
 function login() {
   fetch("https://stormy-forest-82724.herokuapp.com/auth", {
     method: "POST",
@@ -9,11 +11,15 @@ function login() {
       password: document.getElementById("password").value,
     }),
   })
-    .then((res) => res.json())
-    .then((res) => {
-      console.log(res);
-      myStorage = window.localStorage;
-      console.log(res["access_token"]);
-      myStorage.setItem("jwt-token", res["access_token"]);
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data)
+      if (data['description'] == "Invalid credentials"){
+        alert("Username or Password is Incorrect. Please enter correct details")
+      }else{
+        console.log(data['access_token'])
+        myStorage.setItem('jwt-token', data['access_token'])
+        window.location.href = "./show.html"
+      }
     });
 }

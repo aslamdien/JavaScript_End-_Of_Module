@@ -6,6 +6,28 @@
     <title>Add New Product</title>
 </head>
 <body>
-    
+    <div class="container">
+        <form  class="addproduct" method="POST">
+            <table>
+                <tr>
+                    <td><input class="product-info" type="text" name="product_name" id="product_name" placeholder="Enter Product Name" required></td>
+                </tr>
+                <tr>
+                    <td><input class="product-info" type="text" name="price" id="price" placeholder="Price" required></td>
+                </tr>
+                <tr>
+                    <td><input class="product-info" type="file" name="product_image" id="product_image" onchange="previewFile()" required></td>
+                </tr>
+                <tr>
+                    <td><textarea class="product-info" name="description" id="description" placeholder="Give Product Description" cols="30" rows="10" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><button class="product-btn" onclick="event.preventDefault(), addproduct()">Add Product</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <img src="" alt="image-preview" class="imageup" height="300px" width="400px">
+    <script src="./scripts/newproduct.js"></script>
 </body>
 </html>
