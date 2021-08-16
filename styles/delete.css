@@ -1,0 +1,15 @@
+#delete{
+    display: none;
+    transition: smooth 0.8s linear;
+
+  }
+  
+  #delete.active{
+    display: flex;
+    justify-content: start;
+  }
+
+  #out{
+      font-size: medium;
+      text-align: center;
+  }

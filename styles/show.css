@@ -31,11 +31,13 @@ nav {
 }
 
 .container {
-  width: 20vw;
+  min-width: 20vh;
+  width: 39vh;
   height: 60vh;
   border-radius: 20px;
   flex-direction: column;
   display: flex;
+  flex-wrap: nowrap;
   border-radius: 50px;
   background: #8fe0e6;
   box-shadow: inset -20px 20px 60px #e5ffff;
@@ -46,7 +48,7 @@ nav {
 
 .image {
   height: 30vh;
-  width: 20vw;
+  width: 39vh;
   display: flex;
   position: relative;
   right: 20px;
@@ -82,10 +84,13 @@ h2 {
 }
 
 .option {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   top: 15px;
   height: 8vh;
   width: 130vh;
+  gap: 4px;
 }
 
 .link {
@@ -99,23 +104,33 @@ h2 {
 }
 
 
-.btn{
+.btn {
   height: 4vh;
   width: 11vh;
   border-radius: 20px;
   border: 2px solid black;
-  background-color: white;
+  background: linear-gradient(145deg, #eeeeee, #c8c8c8);
+  box-shadow:  20px 20px 60px #dcdcdc,
+               -20px -20px 60px #e0e0e0;
 }
 
-.product-info{
+.btn:hover{
+  background: linear-gradient(145deg, #c8c8c8, #eeeeee);
+  box-shadow:  20px 20px 60px #dcdcdc,
+               -20px -20px 60px #e0e0e0;
+}
+
+.product-info {
   background-color: white;
   border: 1px solid black;
   justify-self: center;
   height: 50px;
   width: 300px;
+  font-size: 20px;
 }
 
-.product-info::placeholder{
+.product-info::placeholder {
   padding-left: 20px;
   font-size: 15px;
 }
+

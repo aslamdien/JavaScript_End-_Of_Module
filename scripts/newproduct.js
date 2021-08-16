@@ -17,7 +17,6 @@ function previewFile() {
   }
 };
 
-
 function addproduct(){
   fetch('https://stormy-forest-82724.herokuapp.com/add-product/', {
     method: "POST",

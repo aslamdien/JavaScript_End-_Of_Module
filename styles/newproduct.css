@@ -1,0 +1,24 @@
+#added {
+    display: none;
+    border-radius: 30px;
+    background: #d32222;
+    box-shadow: inset 20px 20px 60px #b31d1d, inset -20px -20px 60px #f32727;
+    padding: 20px;
+  }
+  
+  #added.active {
+    display: block;
+    transition: linear 0.3s;
+  }
+
+  .product-btn {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #1bdf18, #17bb14);
+    padding: 5px;
+  }
+  
+  .product-btn:hover{
+    border-radius: 50px;
+    background: linear-gradient(145deg, #17bb14, #1bdf18);
+  
+  }

@@ -1,0 +1,14 @@
+#update {
+    display: none;
+    border-radius: 30px;
+    background: #1cd1e9;
+    box-shadow: inset 20px 20px 60px #18b2c6, inset -20px -20px 60px #20f0ff;
+    padding: 20px;
+    z-index: 11;
+    transition: all 0.5s linear;
+}
+  
+  #update.active {
+    display: flex;
+  }
+  
