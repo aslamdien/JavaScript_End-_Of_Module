@@ -3,17 +3,16 @@ function erase() {
     console.log(id);
 
     fetch(`https://stormy-forest-82724.herokuapp.com/delete-product/${id}`, {
-        method: "PUT",
+        method: "GET",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-            id: document.getElementById('out').value,
-        }),
       })
         .then((res) => res.json())
         .then((res) => {
           console.log(res);
+          window.location.reload();
         });
     
 }
+

@@ -61,7 +61,7 @@ nav {
 }
 
 .info {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 h1 {
@@ -110,14 +110,10 @@ h2 {
   border-radius: 20px;
   border: 2px solid black;
   background: linear-gradient(145deg, #eeeeee, #c8c8c8);
-  box-shadow:  20px 20px 60px #dcdcdc,
-               -20px -20px 60px #e0e0e0;
 }
 
 .btn:hover{
   background: linear-gradient(145deg, #c8c8c8, #eeeeee);
-  box-shadow:  20px 20px 60px #dcdcdc,
-               -20px -20px 60px #e0e0e0;
 }
 
 .product-info {

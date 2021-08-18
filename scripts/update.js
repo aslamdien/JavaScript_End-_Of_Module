@@ -1,9 +1,32 @@
-function updateproduct(update) {
-  document.getElementById(update).classList.toggle("active");
+function previewFile2() {
+  const image = document.querySelector(".imageup2");
+  const file = document.querySelector("#product_image2").files[0];
+  const reader = new FileReader();
+
+  reader.addEventListener(
+    "load",
+    function () {
+      // convert image file to base64 string
+      image.src = reader.result;
+    },
+    false
+  );
+
+  if (file) {
+    reader.readAsDataURL(file);
+  }
+};
+
+////////////////////////////////
+
+function button(id) {
+  document.getElementById(id).classList.toggle("active");
 }
 
+///////////////////////////////
+
 function updating() {
-  let id = document.querySelector("#id").value;
+  let id = document.querySelector("#product_id").value;
   console.log(id);
 
   fetch(`https://stormy-forest-82724.herokuapp.com/edit-product/${id}`, {
@@ -12,52 +35,9 @@ function updating() {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      id: document.getElementById("id").value,
       product_name: document.getElementById("product_name").value,
-    }),
-  })
-    .then((res) => res.json())
-    .then((res) => {
-      console.log(res);
-    });
-
-  fetch(`https://stormy-forest-82724.herokuapp.com/edit-product/${id}`, {
-    method: "PUT",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      id: document.getElementById("id").value,
       price: document.getElementById("price").value,
-    }),
-  })
-    .then((res) => res.json())
-    .then((res) => {
-      console.log(res);
-    });
-
-  fetch(`https://stormy-forest-82724.herokuapp.com/edit-product/${id}`, {
-    method: "PUT",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      id: document.getElementById("id").value,
-      product_image: document.getElementById("product_image").src,
-    }),
-  })
-    .then((res) => res.json())
-    .then((res) => {
-      console.log(res);
-    });
-
-  fetch(`https://stormy-forest-82724.herokuapp.com/edit-product/${id}`, {
-    method: "PUT",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      id: document.getElementById("id").value,
+      product_image: document.querySelector(".imageup2").scr,
       description: document.getElementById("description").value,
     }),
   })
@@ -65,4 +45,4 @@ function updating() {
     .then((res) => {
       console.log(res);
     });
-}
+  }

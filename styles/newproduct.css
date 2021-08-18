@@ -1,24 +1,26 @@
 #added {
-    display: none;
-    border-radius: 30px;
-    background: #d32222;
-    box-shadow: inset 20px 20px 60px #b31d1d, inset -20px -20px 60px #f32727;
-    padding: 20px;
-  }
-  
-  #added.active {
-    display: block;
-    transition: linear 0.3s;
-  }
+  display: none;
+  border-radius: 30px;
+  background: rgba( 211, 34, 34, 0.85 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0.0px );
+  -webkit-backdrop-filter: blur( 0.0px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 20px;
+}
 
-  .product-btn {
-    border-radius: 50px;
-    background: linear-gradient(145deg, #1bdf18, #17bb14);
-    padding: 5px;
-  }
-  
-  .product-btn:hover{
-    border-radius: 50px;
-    background: linear-gradient(145deg, #17bb14, #1bdf18);
-  
-  }
+#added.active {
+  display: flex;
+  transition: linear 0.3s;
+}
+
+.product-btn {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #1bdf18, #17bb14);
+  padding: 5px;
+}
+
+.product-btn:hover {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #17bb14, #1bdf18);
+}
