@@ -15,24 +15,35 @@ function previewFile() {
   if (file) {
     reader.readAsDataURL(file);
   }
-};
+}
 
-function addproduct(){
-  fetch('https://stormy-forest-82724.herokuapp.com/add-product/', {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      product_name: document.getElementById("product_name").value,
-      price: document.getElementById("price").value,
-      product_image: document.querySelector(".imageup").src,
-      description: document.getElementById("description").value,
-    }),
-  })
-  .then((res) => res.json).then((data) => {
-    console.log(data);
-    console.log("success");
-    window.location.reload();
-  })
-};
+function addproduct() {
+  let name = document.getElementById("product_name").value;
+  let product_price = document.getElementById("price").value;
+  let product_description = document.getElementById("description").value;
+  let image = document.querySelector(".imageup").src;
+
+  if (name && product_price && image && product_description) {
+    fetch("https://stormy-forest-82724.herokuapp.com/add-product/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        product_name: name,
+        price: product_price,
+        product_image: image,
+        description: product_description,
+      }),
+    })
+      .then((res) => res.json)
+      .then((data) => {
+        console.log(data);
+        console.log(name);
+        console.log("success");
+      })
+      .catch((err) => alert("Error. Please try again, or log in again"));
+  } else {
+    alert("Please Fill out all Information");
+  }
+}
